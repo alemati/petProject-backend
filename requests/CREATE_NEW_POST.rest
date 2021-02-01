@@ -1,0 +1,12 @@
+POST http://localhost:3005/api/posts
+Content-Type: application/json
+Authorization: bearer 
+
+{
+        
+         "content": "first post ever",
+         "likes": 0,
+         "user": "60104ee67b54f0d7af2e2e73"
+        
+
+}

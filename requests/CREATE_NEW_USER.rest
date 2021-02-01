@@ -1,0 +1,24 @@
+POST http://localhost:3005/api/users
+Content-Type: application/json
+
+{
+        
+         "username": "olja",
+         "name": "Olga",
+        "url": "oljaURL",
+         "password": "qwer"
+        
+
+}
+
+
+# "username": "sasha",
+#         "name": "Aleksander",
+#         "url": "sashaURL",
+#         "password": "qwer"
+
+
+# "username": "olja",
+#          "name": "Olga",
+#          "url": "oljaURL",
+#          "password": "qwer"
