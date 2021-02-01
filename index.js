@@ -5,9 +5,9 @@ const http = require('http')
 
 const server = http.createServer(app)
 
-// const PORT = config.PORT
-const PORT = process.env.MONGODB_URI || 3005
-console.log('process.env.MONGODB_URI is:', process.env.MONGODB_URI)
+const PORT = process.env.PORT
+// const PORT = process.env.MONGODB_URI || 3005
+// console.log('process.env.MONGODB_URI is:', process.env.MONGODB_URI)
 
 // let PORT = process.env.PORT
 server.listen(PORT, () => {
