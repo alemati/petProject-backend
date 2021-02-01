@@ -23,9 +23,7 @@ app.use('/api/comments', commentsRouter)
 const skillsRouter = require('./controllers/skills')
 app.use('/api/skills', skillsRouter)
 
-// const url = config.MONGODB_URI
 let url = process.env.MONGODB_URI
-// const url = "mongodb+srv://AM:fsdb@cluster0.sbnjq.mongodb.net/petProject?retryWrites=true&w=majority"
 console.log('connecting to', url)
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
     .then(result => {
