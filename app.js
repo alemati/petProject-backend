@@ -7,6 +7,8 @@ require('express-async-errors')
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
+
 
 const usersRouter = require('./controllers/users')
 app.use('/api/users', usersRouter)
